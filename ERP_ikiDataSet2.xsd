@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ERP_ikiDataSet2" targetNamespace="http://tempuri.org/ERP_ikiDataSet2.xsd" xmlns:mstns="http://tempuri.org/ERP_ikiDataSet2.xsd" xmlns="http://tempuri.org/ERP_ikiDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ERP_ikiConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ERP_ikiConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.exERP_Full.Properties.Settings.GlobalReference.Default.ERP_ikiConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="çalışanlarTableAdapter" GeneratorDataComponentClassName="çalışanlarTableAdapter" Name="çalışanlar" UserDataComponentName="çalışanlarTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ERP_ikiConnectionString (Settings)" DbObjectName="ERP_iki.dbo.çalışanlar" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [ad soyad], maaş FROM dbo.çalışanlar</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ad soyad" DataSetColumn="ad soyad" />
+              <Mapping SourceColumn="maaş" DataSetColumn="maaş" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ERP_ikiDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ERP_ikiDataSet2" msprop:Generator_UserDSName="ERP_ikiDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="çalışanlar" msprop:Generator_TableClassName="çalışanlarDataTable" msprop:Generator_TableVarName="tableçalışanlar" msprop:Generator_TablePropName="çalışanlar" msprop:Generator_RowDeletingName="çalışanlarRowDeleting" msprop:Generator_RowChangingName="çalışanlarRowChanging" msprop:Generator_RowEvHandlerName="çalışanlarRowChangeEventHandler" msprop:Generator_RowDeletedName="çalışanlarRowDeleted" msprop:Generator_UserTableName="çalışanlar" msprop:Generator_RowChangedName="çalışanlarRowChanged" msprop:Generator_RowEvArgName="çalışanlarRowChangeEvent" msprop:Generator_RowClassName="çalışanlarRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ad_x0020_soyad" msprop:Generator_ColumnVarNameInTable="columnad_soyad" msprop:Generator_ColumnPropNameInRow="ad_soyad" msprop:Generator_ColumnPropNameInTable="ad_soyadColumn" msprop:Generator_UserColumnName="ad soyad" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="maaş" msprop:Generator_ColumnVarNameInTable="columnmaaş" msprop:Generator_ColumnPropNameInRow="maaş" msprop:Generator_ColumnPropNameInTable="maaşColumn" msprop:Generator_UserColumnName="maaş" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
